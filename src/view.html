@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" class="light_mode">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="display column" id="bigLeft">
+        <header id="output" class="head">
+            <div class="display">
+                <p id="result"></p>
+            </div>
+        </header>
+        <header id="input" class="head">
+            <div class="display">
+                <p id="current_write" class="color_gray">Faites un calcul !</p>
+            </div>
+        </header>
+        <div id="main_card">
+            <aside id="left">
+                <div id="button_card">
+                    <div>
+                        <button class="btn_numeric" value=1>1</button>
+                        <button class="btn_numeric" value=2>2</button>
+                        <button class="btn_numeric" value=3>3</button>
+                    </div>
+                    <div>
+                        <button class="btn_numeric" value=4>4</button>
+                        <button class="btn_numeric" value=5>5</button>
+                        <button class="btn_numeric" value=6>6</button>
+                    </div>
+                    <div>
+                        <button class="btn_numeric" value=7>7</button>
+                        <button class="btn_numeric" value=8>8</button>
+                        <button class="btn_numeric" value=9>9</button>
+                    </div>
+                    <button class="btn_numeric" id="btn0" value="0">0</button>
+                </div>
+            </aside>
+            <aside id="right">
+                <button class="btn_sub op">+</button>
+                <button class="btn_sub op">-</button>
+                <button class="btn_sub op">*</button>
+                <button class="btn_sub op">÷</button>
+                <button class="btn_sub pointer" id="equal">=</button>
+                <button class="btn_sub pointer" id="suppr">Suppr</button>
+                <button class="btn_sub pointer" id="eff">Effacer</button>
+            </aside>
+        </div>
+    </main>
+    <main class="display column" id="bigRight">
+        <h1>Historique</h1>
+        <footer id="history">
+            
+        </footer>
+        <img class="pointer" id="color_mode" src="./img/night-mode-svgrepo-com (1).svg" alt="Mode dark">
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
